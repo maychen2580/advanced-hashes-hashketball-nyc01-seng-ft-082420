@@ -131,7 +131,7 @@ end
 def num_points_scored(player_name)
   game_hash.map do |team|
    team.map do |info|
-     info == :players
+     when info == :players
        info.map do |player_name|
     
     
