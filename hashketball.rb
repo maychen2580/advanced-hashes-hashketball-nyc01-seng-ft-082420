@@ -128,14 +128,14 @@ def game_hash
 end
 
 # Write code here
-def num_points_scored(player_name)
+def num_points_scored(input_player)
   game_hash.map do |team|
    team.map do |info|
      until info == :players
        info.map do |player_name|
-         return player[:points]
-    
-    
+         return player[:points] if player_name == input_player
+    end
+   end  
   end
 end
 
