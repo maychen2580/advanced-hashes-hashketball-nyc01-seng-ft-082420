@@ -129,7 +129,10 @@ end
 
 # Write code here
 def num_points_scored(player_name)
-  game_hash.each do |_place, team|
+  game_hash.map do |team|
+   team.map do |info|
+     info == :players
+       info.map do |player_name|
     
     
   end
