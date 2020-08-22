@@ -133,6 +133,7 @@ def num_points_scored(player_name)
    team.map do |info|
      until info == :players
        info.map do |player_name|
+         return player[:points]
     
     
   end
