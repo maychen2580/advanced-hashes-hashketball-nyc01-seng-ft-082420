@@ -190,7 +190,7 @@ def player_stats(input_name)
      
      game_hash[home][color].each do |name|
        next unless name[:player_name] == input_name
-       name_hash = name.delete_if do |n, i|
+       name_hash = name.each do |n, i|
          n == :player_name
 end
 end
