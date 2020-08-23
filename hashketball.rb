@@ -185,7 +185,14 @@ end
 def player_stats(input_name)
  name_hash = {}
  game_hash.collect do |home, team|
-   
+   team.each do |color, info|
+     next unless color == [:players]
+     
+     game_hash[home][color].each do |name|
+       next unless name[:player_name] == input_name
+       
 
-
+end
+end
+end
 end
