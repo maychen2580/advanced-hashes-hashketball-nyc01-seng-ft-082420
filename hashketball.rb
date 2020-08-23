@@ -205,6 +205,11 @@ def big_shoe_rebounds
   game_hash.each do |home, team|
     team.each do |color,info|
       next unless info == :shoe
-  
-  
+  if info > biggest_shoe
+    biggest_shoe == info[:shoe]
+  rebounds_num = info[:rebounds]
+end
+end
+end
+rebounds_num
 end
