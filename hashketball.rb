@@ -145,7 +145,8 @@ def shoe_size(input_player)
     team.each do |color, info|
       next unless color == :players
       info.each do |player|
-        return player[:shoe] if player[:player_name] == input_player
+        return player[:shoe
+        ] if player[:player_name] == input_player
   
 end
 end
