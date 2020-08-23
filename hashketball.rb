@@ -160,7 +160,7 @@ end
 end
 
 def team_names
-  game_hash.map do |home, team|
+  game_hash. |home, team|
     team[:team_name]
   
 end
