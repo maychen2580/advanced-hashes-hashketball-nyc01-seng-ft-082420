@@ -182,7 +182,7 @@ player_numbers
 end
 
 
-def player_stats(input_team_name)
+def player_stats(sought_player_name)
   name_hash = {}
   game_hash.collect do |place, team|
 team.each do |attribute, _data|
