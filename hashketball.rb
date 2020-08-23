@@ -129,11 +129,11 @@ end
 
 # Write code here
 def num_points_scored(input_player)
-  game_hash.map do |team|
-   team.map do |info|
-     unless info == :players
-       info.map do |player_name|
-         return player[:points] if player_name == input_player
+  game_hash.map do |home, team|
+   team.map do |color, info|
+     unless color == :players
+       info.map do |player|
+         return player[:points] if player_name[player_name] == input_player
     end
    end  
   end
