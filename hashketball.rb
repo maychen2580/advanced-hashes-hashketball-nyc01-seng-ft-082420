@@ -140,7 +140,9 @@ end
 end
 
 
-def shoe_size
+def shoe_size(input_player)
+  game_hash.each do |color, team|
+    team.each do 
   
 end
 
