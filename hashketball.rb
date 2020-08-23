@@ -160,5 +160,8 @@ end
 end
 
 def team_names
+  game_hash.each do |home, team|
+    return team[:team_name]
+  
 end
 
