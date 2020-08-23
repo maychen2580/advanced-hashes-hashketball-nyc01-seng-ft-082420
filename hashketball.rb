@@ -172,6 +172,8 @@ def player_numbers(input_team_name)
   next unless team[:team_name] == input_team_name
   
   team.each do |color, info|
+    next unless color == :players
+    info. each 
 end
 end
 
