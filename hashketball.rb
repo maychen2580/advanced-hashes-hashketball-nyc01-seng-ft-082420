@@ -173,8 +173,8 @@ def player_numbers(input_team_name)
   
   team.each do |color, info|
     next unless color == :players
-    info.each do |info|
-      player_numbers << info[:number]
+    info.each do |num|
+      player_numbers << num[:number]
 end
 end
 end
