@@ -131,7 +131,7 @@ end
 def num_points_scored(input_player)
   game_hash.each do |home, team|
    team.each do |color, info|
-     unless color == :players
+    next unless color == :players
        info.each do |player|
          return player[:points] if player[player_name] == input_player
     end
