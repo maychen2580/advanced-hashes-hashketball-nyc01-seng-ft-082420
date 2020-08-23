@@ -152,5 +152,9 @@ end
 end
 end
 
-def team_colors
+def team_colors(team_name)
+  game_hash.each do |home, team|
+    return team
+  
+end
 
