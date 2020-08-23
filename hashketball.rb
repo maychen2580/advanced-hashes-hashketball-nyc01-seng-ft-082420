@@ -189,7 +189,11 @@ def player_stats(input_team_name)
       next unless color == :players
       game_hash[home][color].each do |name|
         next unless name[:player_name] == input_team_name
+        input_team_name.each{|nam| puts nam.capitalize}
     
   
+end
+end
+end
 end
 
