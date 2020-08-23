@@ -184,6 +184,8 @@ end
 
 def player_stats(input_team_name)
   input_team_name = {}
+  game_hash.each do |home, team|
+    
   
 end
 
