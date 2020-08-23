@@ -183,7 +183,7 @@ end
 
 
 def player_stats(sought_player_name)
-  name_hash = {}
+  new_hash = {}
   game_hash.collect do |place, team|
 team.each do |attribute, _data|
 next unless attribute == :players
