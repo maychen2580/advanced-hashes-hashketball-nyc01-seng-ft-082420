@@ -170,6 +170,8 @@ def player_numbers(input_team_name)
   player_numbers = []
   game_hash.each do |home,team|
   next unless team[:team_name] == input_team_name
+  
+  team.each do |color, info|
 end
 end
 
