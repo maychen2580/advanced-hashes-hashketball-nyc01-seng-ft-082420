@@ -191,7 +191,7 @@ def player_stats(input_team_name)
         next unless name[:player_name] == input_team_name
         input_team_name.each{|nam| puts nam.capitalize}
     end
+  end
  end
-end
 end
 
