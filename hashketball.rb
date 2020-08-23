@@ -184,13 +184,15 @@ end
 
 def player_stats(input_team_name)
   name_hash = {}
-  game_hash.collect do |home, team|
-    team.each do |color, info|
-      next unless color == :players
-      game_hash[home][color].each do |name|
-        next unless name[:player_name] == input_team_name
-        name_hash = name.delete_if do |n, i|
-          n == :player_name
+  game_hash.collect do |place, team|
+team.each do |attribute, _data|
+next unless attribute == :players
+
+game_hash[place][attribute].each do |player|
+next unless player[:player_name] == sought_player_name
+
+new_hash = player.delete_if do |k, _v|
+k == :player_name
     end
   end
  end
