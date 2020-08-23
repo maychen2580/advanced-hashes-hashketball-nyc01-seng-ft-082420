@@ -161,7 +161,7 @@ end
 
 def team_names
   game_hash.each do |home, team|
-    puts team[:team_name]
+    team[:team_name]
   
 end
 
