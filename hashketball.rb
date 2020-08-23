@@ -190,7 +190,7 @@ def player_stats(input_name)
      
      game_hash[home][color].each do |name|
        next unless name[:player_name] == input_name
-       
+       name_hash = name
 
 end
 end
