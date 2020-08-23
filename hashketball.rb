@@ -160,7 +160,7 @@ end
 end
 
 def team_names
-  game_hash.each do |home, team|
+  game_hash.collect do |home, team|
     team[:team_name]
   
 end
